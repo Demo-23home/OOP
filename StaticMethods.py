@@ -3,11 +3,11 @@ class Employee:
         self.name = name 
         self.position = position
         
-        
+    # INSTANCE METHOD
     def get_details(self) -> str:
         return f"{self.name} {self.position}"
     
-    
+    # STATIC METHOD
     @staticmethod
     def is_valid_position(position:str) -> bool:
         valid_positions = ["SWE", "Backend", "Mobile", "Frontend"]
